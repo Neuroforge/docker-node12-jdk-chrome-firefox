@@ -37,9 +37,9 @@ ENV MAVEN_HOME /usr/share/maven
 
 VOLUME /root/.m2
 
-# Install node 8
+# Install node 12
 RUN set -x \
-    && curl -sL https://deb.nodesource.com/setup_8.x | bash - \
+    && curl -sL https://deb.nodesource.com/setup_12.x | bash - \
     && apt-get update \
     && apt-get install -y \
         nodejs \
